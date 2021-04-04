@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, 
+	initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+		<title>Movie Searcher</title>
+	</head>
+	<body class="flex">
+		<header class="header">
+			<h1>Movie Searcher</h1>
+		</header>
+		<section class="search">
+			<form name="form" class="flex">
+				<div class="title">
+					<label for="Title">Title: </label>
+					<input type="text" name="Title" required autocomplete="off" />
+				</div>
+				<div class="year">
+					<label for="year">Year: </label>
+					<input type="number" name="year" autocomplete="off" />
+				</div>
+				<div class="plot">
+					<label for="plot">Plot: </label>
+					<select name="plot">
+						<option value="short">Short</option>
+						<option value="full">Full</option>
+					</select>
+				</div>
+				<div>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+				</div>
+			</form>
+		</section>
+		<section class="showcase flex">
+			<div class="image">
+				<img
+					src="https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@._V1_SX300.jpg"
+				/>
+			</div>
+			<div class="details flex">
+				<h1 class="title">The legend of Tarzan</h1>
+				<div><small>PG-13 | 2016</small></div>
+				<div class="genres"
+					>Action | Adventure | Drama | Fantasy | Romance
+				</div>
+				<blockquote
+					>Following his parents' death in Africa, John Clayton has been be
+					raised by an ape, was known by the name Tarzan, but eventually left
+					Africa and for his parents' home in England, along with the woman he
+					fell in love with and married, Jane Porter. He is asked by Belgian
+					King Leopold to go to Africa to see what he has done there to help the
+					country. Initially, he refuses. But an American, George Washington
+					Williams, wants him to accept so he can accompany him. He says that
+					Leopold might be committing all sorts of atrocities to achieve his
+					goal, like slavery. Clayton agrees and his wife insists that she
+					accompany him because she misses Africa. When they arrive, a man named
+					Rom, who works for Leopold, attacks their village and captures Tarzan
+					and Jane. With Washington's help he escapes and sets out to rescue
+					Jane by going across the jungle. Washington joins him despite being
+					told that he might not make it.</blockquote
+				>
+			</div>
+			<div class="info flex">
+				<table class="tableInfo">
+					<tr>
+						<td><strong>Actors:</strong></td>
+						<td
+							>Alexander Skarsgård, Rory J. Saper, Christian Stevens, Christoph
+							Waltz</td
+						>
+					</tr>
+					<tr>
+						<td><strong>Production:</strong></td>
+						<td>Jerry Weintraub Productions, Beaglepug</td>
+					</tr>
+					<tr>
+						<td
+							><p><strong>Language:</strong></p></td
+						>
+						<td>English, Lingala, French</td>
+					</tr>
+					<tr>
+						<td><strong>Country:</strong></td>
+						<td>UK, Canada, USA, Australia</td>
+					</tr>
+					<tr>
+						<td><strong>Box Office:</strong></td>
+						<td>$126,643,061</td>
+					</tr>
+				</table>
+				<div class="ratings flex">
+					<h1>Ratings</h1>
+					<div class="rating1 flex" id="rating">
+						<h3>Internet Movie Database</h3>
+						<p>6.2/10</p>
+					</div>
+					<div class="rating2 flex" id="rating">
+						<h3>Rotten Tomatoes</h3>
+						<p>36%</p>
+					</div>
+					<div class="rating3 flex" id="rating">
+						<h3>Metacritic</h3>
+						<p>44/100</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<p
+				>Credits to omdbapi.com for providing all the data build this
+				website.</p
+			>
+			<p>Made just for fun and to learn JavaScript!</p>
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
